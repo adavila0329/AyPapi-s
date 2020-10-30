@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Ay Papi's</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/ayPapisLogo.png" alt="Ay Papi's Logo" id="headerLogo">
+                </div>
+                <div class="col">
+                    <h1>Ay Papi's</h1>
+                    <h3>Puerto Rican Cuisine</h3>
+                    <h5>Good People Good Food</h5>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                <a class="btn btn-info btn-lg" id="caterButton"> Cater with us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="caterModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Cater with Papi</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <div class="form-group col-12">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Name">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="name">Last Name:</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Name">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="numOfGuest" class="col-sm-12 col-form-label">Number of Guest</label>
+                                    <div class="col">
+                                      <select name="numOfGuest" id="numOfGuest" class="form-control">
+                                        <option>Select..</option>
+                                        <option value="10">1</option>
+                                        <option value="20">2</option>
+                                        <option value="30">3</option>
+                                        <option value="40">4</option>
+                                        <option value="50">5</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="date" class="col-sm-12 col-form-label">Date</label>
+                                    <div class="col-12">
+                                      <input type="date" name="date" id="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/ayPapisLogo.png" height="30" width="30" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#papisNavBar"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="papisNavBar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa fa-home fa-lg"> </i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-info fa-lg"> </i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(function() {
+            $("#caterButton").click(function() {
+      $("#caterModal").modal("show");
+    });
+        });
+    </script>
+    
+</body>
+</html>
