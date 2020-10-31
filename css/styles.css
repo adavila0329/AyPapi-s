@@ -1,4 +1,16 @@
+.jumbotron {
+    margin: 0;
+}
+
 #headerLogo{
     height:120px;
     width:120px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.site-footer {
+    background-color: black;
 }
