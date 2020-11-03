@@ -1,10 +1,27 @@
 .jumbotron {
+    /*background-image: url("../img/puertoRicoFlag.jpg");*/
+    background-color: white;
     margin: 0;
 }
 
-#headerLogo{
-    height:120px;
-    width:120px;
+header {
+    text-align: center;
+}
+
+#headerLogo {
+    height:150px;
+    width:150px;
+}
+
+#caterButton {
+    border-color: red;
+    border: solid;
+}
+
+#callBtn {
+    margin-bottom: 1rem;
+    border-color: green;
+    border: solid
 }
 
 .navbar {
@@ -13,4 +30,21 @@
 
 .site-footer {
     background-color: black;
+    margin-top: 4rem;
+    margin-bottom: 0%;
+    padding: 1rem;
+    color: white;
+}
+
+#socialIcon {
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin-top: 4rem;
+}
+
+.card-img-top {
+    width: 18rem;
+    height: 18rem;
 }
